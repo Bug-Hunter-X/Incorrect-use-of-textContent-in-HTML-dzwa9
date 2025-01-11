@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Incorrectly accessing the text content of a div.
+    let divText = document.getElementById("myDiv").textContent;
+    console.log(divText);
+    //This will output only the text content of the child element <p> of div element
+    //To get the complete innerHTML, use innerHTML instead of textContent.
+  </script>
+</body>
+</html>
