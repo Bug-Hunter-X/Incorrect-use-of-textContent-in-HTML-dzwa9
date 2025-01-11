@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+    <span>This is some more text.</span>
+  </div>
+
+  <script>
+    // Correctly accessing the complete innerHTML of a div
+    let divContent = document.getElementById("myDiv").innerHTML;
+    console.log(divContent);
+    //This will output the complete innerHTML of the div element, including HTML tags.
+  </script>
+</body>
+</html>
